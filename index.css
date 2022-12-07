@@ -8,8 +8,17 @@ h1 {
 }
 
 .wrapper {
-    margin: 50px
+    margin: 5%;
 }
+
+.wrapper li {
+    font-style: italic;
+}
+
+/* .video {
+    background-color: rgb(220, 220, 220);
+
+} */
 
 .navbar {
     width: 100%;
