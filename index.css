@@ -1,11 +1,17 @@
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, aria, Tahoma, sans-serif; */
+    font-family: Verdana, Helvetica, sans-serif;
 }
 
 
 h1 {
     font-size: 24px;
 }
+
+p {
+    font-size: 18px;
+}
+
 
 .intro {
     background-color: aliceblue;
@@ -14,11 +20,25 @@ h1 {
 }
 
 .wrapper {
-    margin: 5%;
+    margin: 2%;
+}
+
+.video {
+    display: flexbox;
+    text-align: center;
+    padding: 15px;
+    max-width: fit-content;
+    width: fit-content;
+}
+
+video {
+    display: inline;
+    width: 720pt;
+    background-color: black;
 }
 
 .wrapper li {
-    font-style: italic;
+    font-size: 18px;
 }
 
 /* .video {
@@ -53,9 +73,14 @@ h1 {
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
     .navbar a {
         float: none;
         display: block;
+    }
+
+    video {
+        display: block;
+        width: 320pt;
     }
 }
