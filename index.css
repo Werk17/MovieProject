@@ -14,7 +14,7 @@ p {
 
 
 .intro {
-    background-color: aliceblue;
+    background-color: rgb(211, 211, 211);
     padding: 10px;
     margin: 5px;
 }
@@ -24,15 +24,20 @@ p {
 }
 
 .video {
-    display: flexbox;
-    text-align: center;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
     padding: 15px;
-    max-width: fit-content;
+    /* max-width: fit-content; */
     width: fit-content;
+    flex-direction: column;
+    margin-right: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 video {
-    display: inline;
+    /* display: relative; */
     width: 720pt;
     background-color: black;
 }
@@ -40,11 +45,6 @@ video {
 .wrapper li {
     font-size: 18px;
 }
-
-/* .video {
-    background-color: rgb(220, 220, 220);
-
-} */
 
 .navbar {
     width: 100%;
@@ -71,6 +71,16 @@ video {
 .active {
     background-color: #0f519c;
 }
+
+.conclusion {
+    background-color: rgb(211, 211, 211);
+    margin-left: 15px;
+}
+
+h4 {
+    margin: 2%;
+}
+
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 720px) {
